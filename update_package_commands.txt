@@ -1,0 +1,5 @@
+Для обновления пакета действовать в следующем порядке:
+
+1. npm version patch
+2. npm login
+3. npm publish
