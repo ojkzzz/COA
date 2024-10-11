@@ -1,6 +1,6 @@
 {
   "name": "create-ojk-app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A template for creating new React/TypeScript projects",
   "main": "index.js",
   "bin": {
