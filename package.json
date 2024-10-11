@@ -1,0 +1,24 @@
+{
+  "name": "create-ojk-app",
+  "version": "1.0.7",
+  "description": "A template for creating new React/TypeScript projects",
+  "main": "index.js",
+  "bin": {
+    "create-ojk-app": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  },
+  "keywords": [
+    "react-template-app",
+    "redux-toolkit-query",
+    "react-router-dom",
+    "mui",
+    "toastify"
+  ],
+  "author": "Platunov Oleg Denisovich",
+  "license": "MIT"
+}
