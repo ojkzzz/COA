@@ -1,7 +1,10 @@
 import { Paper, Button, Typography } from "@mui/material";
 import { useAppDispatch } from "store/hooks/hooks";
 import { setAuth } from "store/auth/auth.slice";
-import { removeAccessTokenFromStorage, removeRefreshTokenFromStorage } from "helpers/tokens";
+import {
+  removeAccessTokenFromStorage,
+  removeRefreshTokenFromStorage,
+} from "utils/tokens";
 
 const styles = {
   root: {

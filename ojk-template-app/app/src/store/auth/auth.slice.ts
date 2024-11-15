@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTokensFromStorage } from "helpers/tokens";
+import { getTokensFromStorage } from "utils/tokens";
 
 const initialState = {
   auth: Boolean(getTokensFromStorage().access_token),

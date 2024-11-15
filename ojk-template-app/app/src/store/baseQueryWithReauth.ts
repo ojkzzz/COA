@@ -7,7 +7,7 @@ import {
   removeRefreshTokenFromStorage,
   setAccessTokenToStorage,
   setRefreshTokenToStorage,
-} from "helpers/tokens";
+} from "utils/tokens";
 
 const prepareHeaders = (headers: any) => {
   const { access_token } = getTokensFromStorage();
@@ -21,7 +21,11 @@ const baseQuery = fetchBaseQuery({
   prepareHeaders: prepareHeaders,
 });
 
-export const baseQueryWithReauth = async (args: any, api: any, extraOptions: any) => {
+export const baseQueryWithReauth = async (
+  args: any,
+  api: any,
+  extraOptions: any
+) => {
   let result = await baseQuery(args, api, extraOptions);
   if (result.error && result.error.status === 401) {
     const { refresh_token } = getTokensFromStorage();

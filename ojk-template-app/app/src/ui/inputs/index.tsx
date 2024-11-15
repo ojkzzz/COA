@@ -4,38 +4,16 @@ import { TextInput } from "./text";
 import { PasswordInput } from "./password";
 import TimeInput from "./time/TimeInput";
 
-const RHFInput: FC<RHFInputType> = ({
-  type,
-  form,
-  name,
-  label,
-  minTime,
-  maxTime,
-  ...otherProps
-}) => {
-  switch (type) {
+const RHFInput: FC<RHFInputType> = (props) => {
+  switch (props.type) {
     case "text":
-      return <TextInput form={form} name={name} label={label} {...otherProps} />;
-      break;
+      return <TextInput {...props} />;
     case "password":
-      return <PasswordInput form={form} name={name} label={label} {...otherProps} />;
-      break;
+      return <PasswordInput {...props} />;
     case "time":
-      return (
-        <TimeInput
-          form={form}
-          name={name}
-          label={label}
-          {...otherProps}
-          minTime={minTime}
-          maxTime={maxTime}
-        />
-      );
-      break;
+      return <TimeInput {...props} />;
     default:
-      return <TextInput form={form} name={name} label={label} {...otherProps} />;
-      break;
-      break;
+      return <TextInput {...props} />;
   }
 };
 export default RHFInput;

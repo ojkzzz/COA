@@ -45,7 +45,11 @@ function App() {
           </Route>
         </Routes>
       )}
-      <ToastContainer transition={Slide} position="bottom-right" hideProgressBar />
+      <ToastContainer
+        transition={Slide}
+        position="bottom-right"
+        hideProgressBar
+      />
     </>
   );
 }
